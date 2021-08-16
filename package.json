@@ -1,0 +1,44 @@
+{
+  "name": "parcel-starter",
+  "version": "0.1.0",
+  "main": "index.js",
+  "license": "MIT",
+  "author": "ahmadertarizqi <ahmadertariz@gmail.com>",
+  "targets": {
+    "main": false
+  },
+  "scripts": {
+    "clear-cache": "npx rimraf .parcel-cache",
+    "dev": "parcel serve ./src/index.html",
+    "prebuild": "rimraf dist",
+    "build": "parcel build --public-url ./ ./src/*.html --dist-dir dist --no-cache"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.15.0",
+    "@babel/preset-env": "^7.15.0",
+    "@parcel/transformer-sass": "2.0.0-rc.0",
+    "autoprefixer": "9.0.0",
+    "parcel": "^2.0.0-rc.0",
+    "postcss-modules": "^4.2.2",
+    "sass": "^1.32.12"
+  },
+  "dependencies": {
+    "@popperjs/core": "^2.9.3",
+    "bootstrap": "^5.1.0",
+    "global": "^4.4.0",
+    "jquery": "^3.6.0",
+    "popper.js": "^1.16.1",
+    "regenerator-runtime": "^0.13.9"
+  },
+  "browserslist": [
+    ">= 0.5%",
+    "last 2 major versions",
+    "not dead",
+    "Chrome >= 60",
+    "Firefox >= 60",
+    "Firefox ESR",
+    "iOS >= 12",
+    "Safari >= 12",
+    "not Explorer <= 11"
+  ]
+}
